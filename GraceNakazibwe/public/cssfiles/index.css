@@ -54,7 +54,7 @@ font-weight: 600;
  color:#fff;
  margin-left: 90%;
 }
-.form-control{
+/* .form-control {
  width:70%;
  height: 50px;
  display: flex;
@@ -63,19 +63,29 @@ font-weight: 600;
  border-style: hidden;
  padding: 0;
  
-}
-.surname{
+} */
+.form-control {
+    width:70%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: hidden;
+    padding: 0;
+    
+   }
+/* .surname{
  width: 45%;
  height: 40px;
  margin-right:10%;
  /* border:1px solid green; */
 }
-.givename{
+/* .givename{
     width: 45%;
     height: 40px;
     /* border:1px solid blue; */
-}
-.Pgivename{
+} */ 
+/* .Pgivename{
     margin-left: 29%;
     font-size:18px;
     font-family: sans-serif;
@@ -86,27 +96,61 @@ font-weight: 600;
     font-size:18px;
     font-family: sans-serif;
     
-}
-#surname-error{
-    margin-left: 15%;
-    font-family: sans-serif;
-}
-#givename-error{
-    margin-left: 18%;
+} */
+.Pgivename{
+    margin-left: 3%;
+    font-size:18px;
     font-family: sans-serif;
     
 }
-.section{
-margin-bottom: 1%;
+.Psurname{
+    margin-left: 3%;
+    font-size:18px;
+    font-family: sans-serif;
+    
 }
+.input-div-left{
+/* border: 1px solid red; */
+}
+.input-div-right{
+    /* border: 1px solid blue; */
+}
+.input-div-left input{
+    width: 90%;
+    height: 40px;
+}
+.input-div-right input{
+    width: 90%;
+    height: 40px;
+}
+
+
+#surname-error{
+    margin-left: 1%;
+    font-family: sans-serif;
+}
+#givename-error{
+    margin-left: 1%;
+    font-family: sans-serif;
+    
+}
+/* .section{
+margin-bottom: 1%;
+} */
+
+.row{
+margin-bottom: 1%;
+/* border:1px solid red; */
+}
+
 .P-DOB{
-    margin-left: 15%;
+    margin-left:3%;
     font-size:18px;
     font-family: sans-serif;
     
 }
 .P-Residence{
-    margin-left: 25%;
+    margin-left: 3%;
     font-size:18px;
     font-family: sans-serif;
     
@@ -123,20 +167,20 @@ margin-bottom: 1%;
     /* border:1px solid blue; */
 }
 #DOB-error{
-    margin-left: 15%;
+    margin-left: 1%;
     font-family: sans-serif;
 }
 #Residence-error{
-    margin-left: 18%;
+    margin-left: 1%;
     font-family: sans-serif;
 }
 .POccupation{
-    margin-left: 15%;
+    margin-left: 3%;
     font-size:18px;
     font-family: sans-serif;
 }
 .PNationality{
-    margin-left: 26%;
+    margin-left: 3%;
     font-size:18px;
     font-family: sans-serif;
 }
@@ -153,18 +197,18 @@ margin-bottom: 1%;
     /* border:1px solid blue; */
 }
 #Occuration-error{
-    margin-left: 15%;
+    margin-left: 1%;
     font-family: sans-serif;
 }
 #Nationality-error{
-    margin-left: 24%;
+    margin-left: 1%;
     font-family: sans-serif;  
 }
 .PGender{
 border-bottom: 1px solid black;
 font-size:18px;
-width:70%;
-margin-left: auto;
+width:66%;
+margin-left:15%;
 margin-right: auto;
 padding: 0;
 font-family: sans-serif;
@@ -173,9 +217,10 @@ font-family: sans-serif;
     margin-bottom: 0;
 }
 .malespan{
+    margin-left: 2%;
     width: 45%;
     height: 40px;
-    margin-right:10%;
+    margin-right:8%;
     /* border:1px solid green; */
 }
 .femalespan{
@@ -184,16 +229,16 @@ font-family: sans-serif;
     /* border:1px solid blue; */
 }
 select{
-    width:70%;
+    width:68.5%;
     height: 40px;
     display: flex;
-    margin-left: auto;
+    margin-left:15%;
     margin-right: auto;
     padding: 0;
     /* border:1px solid red;   */
 }
 .btn-submit{
-margin-left:53%;
+margin-left:50%;
 width:32%;
 color:white;
 font-family: sans-serif;
@@ -209,4 +254,7 @@ border:1px solid dodgerblue;
     margin-left: 15%;
     font-size:18px;
     font-family: sans-serif;
+}
+.form-check-label{
+margin-right: 2%;
 }
