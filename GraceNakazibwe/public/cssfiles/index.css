@@ -22,7 +22,7 @@ padding: 0;
 
 }
 .color-right{
-
+   
 height: inherit;
 padding:0;
 
@@ -41,13 +41,14 @@ margin-bottom: 0;
 font-weight: 600;
 }
 .form-success{
+    text-align: center;
     height: 40px;
     width:70%;
     margin-top: 2%;
     margin-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
-    /* border: 1px solid green; */
+   
 }
 .fa-times{
  color:#fff;
@@ -91,7 +92,7 @@ font-weight: 600;
     font-family: sans-serif;
 }
 #givename-error{
-    margin-left: 24%;
+    margin-left: 18%;
     font-family: sans-serif;
     
 }
@@ -116,7 +117,7 @@ margin-bottom: 1%;
     margin-right:10%;
     /* border:1px solid green; */
 }
-.Residence{
+.Residence{ 
     width: 45%;
     height: 40px;
     /* border:1px solid blue; */
@@ -126,7 +127,7 @@ margin-bottom: 1%;
     font-family: sans-serif;
 }
 #Residence-error{
-    margin-left: 24%;
+    margin-left: 18%;
     font-family: sans-serif;
 }
 .POccupation{
@@ -135,7 +136,7 @@ margin-bottom: 1%;
     font-family: sans-serif;
 }
 .PNationality{
-    margin-left: 28%;
+    margin-left: 25%;
     font-size:18px;
     font-family: sans-serif;
 }
