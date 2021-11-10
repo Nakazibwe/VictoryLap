@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
       if (err) {
         throw err;
       }
-      res.redirect('/').send('You  have successfully sent a message');
+      res.redirect('/');
     });
   } catch (error) {
     res.status(400).send('Sorry! Data was not sent to DB');
