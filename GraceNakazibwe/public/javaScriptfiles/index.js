@@ -32,7 +32,6 @@ const successIcon = document.getElementById('icon');
 const nonumber = /^[A-Za-z]+$/;
 const capitalize = /^[A-Z][a-z]/;
 
-
 // Validation function.
 const validate = (event) => {
   let isValid = true;
@@ -46,6 +45,12 @@ const validate = (event) => {
     isValid = false;
   } else if (!(surName.length > 1 && surName.length < 16)) {
     surnameERROR.innerHTML = 'Surname is between 1-16 characters';
+    surnameERROR.style = 'color:red';
+    surname.style.border = '1px solid red';
+    surname.focus();
+    isValid = false;
+  } else if (!surName.match(nonumber)) {
+    surnameERROR.innerHTML = 'Surname is letters only';
     surnameERROR.style = 'color:red';
     surname.style.border = '1px solid red';
     surname.focus();
@@ -69,6 +74,12 @@ const validate = (event) => {
     givenname.style.border = '1px solid red';
     givenname.focus();
     isValid = false;
+  } else if (!givenName.match(nonumber)) {
+    givennameERROR.innerHTML = 'Given name is letters only';
+    givennameERROR.style = 'color:red';
+    givenname.style.border = '1px solid red';
+    givenname.focus();
+    isValid = false;
   } else {
     successMessage.innerHTML = 'Registration was Successful !';
     successMessage.style = 'background-color:#0bda51 ; color:#fff; font-weight:500;';
@@ -79,7 +90,7 @@ const validate = (event) => {
   const today = new Date();
   const birth = new Date(patientDOB.value);
   const age = today.getFullYear() - birth.getFullYear();
-  
+
   if (patientDOB.checked == false && patientDOB.value == '') {
     patientDOBError.innerHTML = 'This field is required';
     patientDOBError.style = 'color:red';
@@ -118,6 +129,12 @@ const validate = (event) => {
     patientresidence.style.border = '1px solid red';
     patientresidence.focus();
     isValid = false;
+  } else if (!patientResidence.match(nonumber)) {
+    patienceResidenceERROR.innerHTML = 'Residence is letters only';
+    patienceResidenceERROR.style = 'color:red';
+    patientresidence.style.border = '1px solid red';
+    patientresidence.focus();
+    isValid = false;
   } else {
     successMessage.innerHTML = 'Registration was Successful !';
     successMessage.style = 'background-color:#0bda51 ; color:#fff; font-weight:500;';
@@ -138,6 +155,12 @@ const validate = (event) => {
     patientoccupation.style.border = '1px solid red';
     patientoccupation.focus();
     isValid = false;
+  } else if (!patientOccupation.match(nonumber)) {
+    patienceOccupationERROR.innerHTML = 'Occupation is letters only';
+    patienceOccupationERROR.style = 'color:red';
+    patientoccupation.style.border = '1px solid red';
+    patientoccupation.focus();
+    isValid = false;
   } else {
     successMessage.innerHTML = 'Registration was Successful !';
     successMessage.style = 'background-color:#0bda51 ; color:#fff; font-weight:500;';
@@ -153,6 +176,12 @@ const validate = (event) => {
     isValid = false;
   } else if (!(patientNationality.length > 5 && patientNationality.length < 20)) {
     patientnationalityERROR.innerHTML = 'Nationality should be between 5-20 characters';
+    patientnationalityERROR.style = 'color:red';
+    patientnationality.style.border = '1px solid red';
+    patientnationality.focus();
+    isValid = false;
+  } else if (!patientNationality.match(nonumber)) {
+    patientnationalityERROR.innerHTML = 'Nationality is letters only';
     patientnationalityERROR.style = 'color:red';
     patientnationality.style.border = '1px solid red';
     patientnationality.focus();
