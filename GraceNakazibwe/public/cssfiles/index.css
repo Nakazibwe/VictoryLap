@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding : 0;
+}
+.container{
+    width:60%;
+    height:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+.top-row{
+    height:100px;
+}
+.color-left{
+height: inherit;
+
+padding: 0;
+
+}
+.color-right{
+
+height: inherit;
+padding:0;
+
+}
+.mid-row{
+text-align: center;
+margin-top:1%;
+font-family: sans-serif;
+}
+.mid-row p{
+font-size:18px;
+margin-bottom: 0;
+
+}
+.mid-row h3{
+font-weight: 600;
+}
+.form-success{
+    height: 40px;
+    width:70%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid green; */
+}
+.fa-times{
+ color:#fff;
+ margin-left: 90%;
+}
+.form-control{
+ width:70%;
+ height: 50px;
+ display: flex;
+ margin-left: auto;
+ margin-right: auto;
+ border-style: hidden;
+ padding: 0;
+ 
+}
+.surname{
+ width: 45%;
+ height: 40px;
+ margin-right:10%;
+ /* border:1px solid green; */
+}
+.givename{
+    width: 45%;
+    height: 40px;
+    /* border:1px solid blue; */
+}
+.Pgivename{
+    margin-left: 28%;
+    font-size:18px;
+    font-family: sans-serif;
+    
+}
+.Psurname{
+    margin-left: 15%;
+    font-size:18px;
+    font-family: sans-serif;
+    
+}
+#surname-error{
+    margin-left: 15%;
+    font-family: sans-serif;
+}
+#givename-error{
+    margin-left: 24%;
+    font-family: sans-serif;
+    
+}
+.section{
+margin-bottom: 1%;
+}
+.P-DOB{
+    margin-left: 15%;
+    font-size:18px;
+    font-family: sans-serif;
+    
+}
+.P-Residence{
+    margin-left: 24%;
+    font-size:18px;
+    font-family: sans-serif;
+    
+}
+.DOB{
+    width: 45%;
+    height: 40px;
+    margin-right:10%;
+    /* border:1px solid green; */
+}
+.Residence{
+    width: 45%;
+    height: 40px;
+    /* border:1px solid blue; */
+}
+#DOB-error{
+    margin-left: 15%;
+    font-family: sans-serif;
+}
+#Residence-error{
+    margin-left: 24%;
+    font-family: sans-serif;
+}
+.POccupation{
+    margin-left: 15%;
+    font-size:18px;
+    font-family: sans-serif;
+}
+.PNationality{
+    margin-left: 28%;
+    font-size:18px;
+    font-family: sans-serif;
+}
+.occupation{
+    width: 45%;
+    height: 40px;
+    margin-right:10%;
+    /* border:1px solid green;    */
+
+}
+.nationality{
+    width: 45%;
+    height: 40px;
+    /* border:1px solid blue; */
+}
+#Occuration-error{
+    margin-left: 15%;
+    font-family: sans-serif;
+}
+#Nationality-error{
+    margin-left: 24%;
+    font-family: sans-serif;  
+}
+.PGender{
+border-bottom: 1px solid black;
+font-size:18px;
+width:70%;
+margin-left: auto;
+margin-right: auto;
+padding: 0;
+font-family: sans-serif;
+}
+.PGender p{
+    margin-bottom: 0;
+}
+.malespan{
+    width: 45%;
+    height: 40px;
+    margin-right:10%;
+    /* border:1px solid green; */
+}
+.femalespan{
+    width: 45%;
+    height: 40px;
+    /* border:1px solid blue; */
+}
+select{
+    width:70%;
+    height: 40px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    /* border:1px solid red;   */
+}
+.btn-submit{
+margin-left:53%;
+width:32%;
+color:white;
+font-family: sans-serif;
+background-color: dodgerblue;
+border:1px solid dodgerblue;
+
+}
+#category-error{
+    margin-left: 15%;
+    font-family: sans-serif;
+}
+.P-Category{
+    margin-left: 15%;
+    font-size:18px;
+    font-family: sans-serif;
+}
