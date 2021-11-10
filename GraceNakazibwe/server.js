@@ -29,7 +29,11 @@ mongoose.connection
   });
 
 // Requiring routes.
-const PatientReg = require('./routes/patientRegRoutes');
+const PatientRegRoutes = require('./routes/patientRegRoutes');
+
+// Requiring models.
+const PatientsReg = require('./models/patientRegModels');
+
 
 // Configurations.
 app.set('view engine', 'pug');
@@ -41,7 +45,7 @@ app.use(express.static(path.join(__dirname + '/public')));
 app.use('/public/imagefiles', express.static(__dirname + '/public/imagefiles'));
 
 // Routes for the project.
-app.use('/', PatientReg);
+app.use('/', PatientRegRoutes);
 
 
 
