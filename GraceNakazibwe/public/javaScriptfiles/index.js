@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-empty */
 /* eslint-disable consistent-return */
 /* eslint-disable eqeqeq */
@@ -80,8 +81,24 @@ const validate = (event) => {
   }
 
   // Validating the date of birth.
+  const today = new Date();
+  const birth = new Date(patientDOB.value);
+  const age = today.getFullYear() - birth.getFullYear();
+  
   if (patientDOB.checked == false && patientDOB.value == '') {
     patientDOBError.innerHTML = 'This field is required';
+    patientDOBError.style = 'color:red';
+    patientDOB.style.border = '1px solid red';
+    patientDOB.focus();
+    isValid = false;
+  } else if (age < 1) {
+    patientDOBError.innerHTML = 'Patient is young to do the test';
+    patientDOBError.style = 'color:red';
+    patientDOB.style.border = '1px solid red';
+    patientDOB.focus();
+    isValid = false;
+  } else if (age > 150) {
+    patientDOBError.innerHTML = 'Patient is too old to do test';
     patientDOBError.style = 'color:red';
     patientDOB.style.border = '1px solid red';
     patientDOB.focus();
@@ -117,7 +134,7 @@ const validate = (event) => {
   if (patientOccupation == '') {
     patienceOccupationERROR.innerHTML = 'This Field is required';
     patienceOccupationERROR.style = 'color:red';
-    patientoccupation.style = '1px solid red';
+    patientoccupation.style.border = '1px solid red';
     patientoccupation.focus();
     isValid = false;
   } else if (!(patientOccupation.length > 5 && patientOccupation.length < 20)) {
