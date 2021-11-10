@@ -10,7 +10,7 @@ html(lang='en')
     link(rel='stylesheet' href='/cssfiles/index.css')
   body
     .container
-      form#form-id(action='/' method='POST' name='patientform')
+      form#form-id(action='' name='patientform')
         .row.top-row
           .col-lg-5.color-left
             img(src='/imagefiles/ugandaflag.png' width='318px' height='99px' alt='ug flag')
@@ -24,51 +24,60 @@ html(lang='en')
           p Virus-Test Registration Form
         #form-success.form-success
           i#icon.fa.fa-times
-        .section
-          span.Psurname Surname
-          span.Pgivename Given name
+        .row
           .form-control
-            input.surname(type='text' name='Surname')
-            input.givename(type='text' name='Givenname')
-          span#surname-error
-          span#givename-error
-        .section
-          span.P-DOB Date of Birth
-          span.P-Residence Place of Residence
+            .col-md-6.input-div-left
+              label.Psurname Surname
+              br
+              input.surname(type='text' name='Surname')
+              small#surname-error
+            .col-md-6.input-div-right
+              label.Pgivename Given name
+              br
+              input.givename(type='text' name='Givenname')
+              small#givename-error
+        .row
           .form-control
-            input.DOB(type='date' max='2019-12-31' name='dateofbirth')
-            input.Residence(type='text' name='residence')
-          span#DOB-error
-          span#Residence-error
-        .section
-          span.POccupation Occupation
-          span.PNationality Nationality
+            .col-md-6.input-div-left
+              label.P-DOB Date of Birth
+              input.DOB(type='date' max='2019-12-31' name='dateofbirth')
+              small#DOB-error
+            .col-md-6.input-div-right
+              label.P-Residence Place of Residence
+              input.Residence(type='text' name='residence')
+              small#Residence-error
+        .row
           .form-control
-            input.occupation(type='text' name='occupation')
-            input.nationality(type='text' name='nationality')
-          span#Occuration-error
-          span#Nationality-error
-        .section
+            .col-md-6.input-div-left
+              label.POccupation Occupation
+              input.occupation(type='text' name='occupation')
+              small#Occuration-error
+            .col-md-6.input-div-right
+              label.PNationality Nationality
+              input.nationality(type='text' name='nationality')
+              small#Nationality-error
+        .row
           .PGender
             span Gender
           .form-control
-            span.malespan
+            .malespan
               label.form-check-label(for='male') Male
               input#male.form-check-input(type='radio' name='gender' value='Male' checked)
-            span.femalespan
+            .femalespan
               label.form-check-label(for='female') Female
               input#female.form-check-input(type='radio' name='gender' value='Female')
-        .section
-          span.P-Category Category
-          br
-          select.form-action(name='category')
-            option(value='default')  --Select Category-- 
-            option(value='returnee') Returnee
-            option(value='contact') Contact
-            option(value='alert') Alert
-            option(value='volunteer') Volunteer
-          span#category-error
-        .section
+        .row
+          .col-lg-12
+            label.P-Category Category
+            br
+            select(name='category')
+              option(value='default')  --Select Category-- 
+              option(value='returnee') Returnee
+              option(value='contact') Contact
+              option(value='alert') Alert
+              option(value='volunteer') Volunteer
+            small#category-error
+        .row
           input.btn-submit(type='submit' value='Register')
     script(src='/javaScriptfiles/js/bootstrap.min.js')
     script(src='/javaScriptfiles/index.js')
