@@ -32,63 +32,94 @@
 
             </div>
             <div class="form-success" id="form-success"><i id="icon" class="fa fa-times"></i></div>
-            <div class="section">
-                <span class="Psurname">Surname</span>
-                <span class="Pgivename">Given name</span>
+            <div class="row ">
                 <div class="form-control">
-                    <input type="text" name="Surname" class="surname">
-                    <input type="text" name="Givenname" class="givename">
+                    <div class="col-md-6 input-div-left">
+                        <label class="Psurname">Surname</label><br>
+                        <input type="text" name="Surname" class="surname">
+                        <small id="surname-error"></small>
+                    </div>
+
+                    <div class="col-md-6 input-div-right">
+                        <label class="Pgivename">Given name</label><br>
+                        <input type="text" name="Givenname" class="givename">
+                        <small id="givename-error"></small>
+                    </div>
                 </div>
-                <span id="surname-error"></span>
-                <span id="givename-error"></span>
+
+
             </div>
-            <div class="section">
-                <span class="P-DOB">Date of Birth</span>
-                <span class="P-Residence">Place of Residence</span>
+
+
+
+            <div class="row">
+
                 <div class="form-control">
-                    <input type="date" max='2019-12-31' name="dateofbirth" class="DOB">
-                    <input type="text" name="residence" class="Residence">
+                    <div class="col-md-6 input-div-left">
+                        <label class="P-DOB">Date of Birth</label>
+                        <input type="date" max='2019-12-31' name="dateofbirth" class="DOB">
+                        <small id="DOB-error"></small>
+                    </div>
+                    <div class="col-md-6 input-div-right">
+                        <label class="P-Residence">Place of Residence</label>
+                        <input type="text" name="residence" class="Residence">
+                        <small id="Residence-error"></small>
+                    </div>
                 </div>
-                <span id="DOB-error"></span>
-                <span id="Residence-error"></span>
+
             </div>
-            <div class="section">
-                <span class="POccupation">Occupation</span>
-                <span class="PNationality">Nationality</span>
+
+
+
+            <div class="row">
+
                 <div class="form-control">
-                    <input type="text" name="occupation" class="occupation">
-                    <input type="text" name="nationality" class="nationality">
+                    <div class="col-md-6 input-div-left">
+                        <label class="POccupation">Occupation</label>
+                        <input type="text" name="occupation" class="occupation">
+                        <small id="Occuration-error"></small>
+                    </div>
+
+                    <div class="col-md-6 input-div-right">
+                        <label class="PNationality">Nationality</label>
+                        <input type="text" name="nationality" class="nationality">
+                        <small id="Nationality-error"></small>
+                    </div>
                 </div>
-                <span id="Occuration-error"></span>
-                <span id="Nationality-error"></span>
+
+
             </div>
-            <div class="section">
+
+            <div class="row">
                 <div class=" PGender"><span>Gender</span></div>
                 <div class="form-control">
-                    <span class="malespan">
+                    <div class="  malespan">
                         <label class="form-check-label " for="male">Male</label>
                         <input class="form-check-input" type="radio" name="gender" id="male" value="Male" checked>
-                    </span>
-                    <span class="femalespan">
+                    </div>
+                    <div class=" femalespan">
                         <label class="form-check-label " for="female">Female</label>
                         <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
-                    </span>
+                    </div>
                 </div>
 
             </div>
-            <div class="section">
-                <span class="P-Category">Category</span><br>
-                <select class="form-action" name="category">
-                    <option value="default"> --Select Category-- </option>
-                    <option value="returnee">Returnee</option>
-                    <option value="contact">Contact</option>
-                    <option value="alert">Alert</option>
-                    <option value="volunteer">Volunteer</option>
-                </select>
-                <span id="category-error"></span>
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <label class="P-Category">Category</label><br>
+                    <select name="category">
+                        <option value="default"> --Select Category-- </option>
+                        <option value="returnee">Returnee</option>
+                        <option value="contact">Contact</option>
+                        <option value="alert">Alert</option>
+                        <option value="volunteer">Volunteer</option>
+                    </select>
+                    <small id="category-error"></small>
+                </div>
             </div>
 
-            <div class="section">
+            <div class="row">
 
 
                 <input type="submit" value="Register" class="btn-submit">
