@@ -31,13 +31,8 @@ const successIcon = document.getElementById('icon');
 // Regular expressions.
 const nonumber = /^[A-Za-z]+$/;
 const capitalize = /^[A-Z][a-z]/;
-const morethan1 = /[\w\s]+/;
-const alphaNumeric = /^[a-zA-Z0-9 ]*$/;
-const systemIDFormat = /^[a-z]{3}\d+[a-z]{3}/;
-const nationalIDFormat = /^[A-Z]{2}\d+[A-Z]{3}/;
-const phoneFormat = /^\d{12}$/;
-const twitterFormat = /(^|[^@\w])@(\w{1,15})\b/;
-const emailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+
+
 // Validation function.
 const validate = (event) => {
   let isValid = true;
