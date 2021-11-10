@@ -13,6 +13,31 @@ const patientRegSchema = new mongoose.Schema({
     trim: true,
     required: true,
   },
+  dateofbirth: {
+    type: Date,
+    trim: true,
+    required: true,
+  },
+  occupation: {
+    type: String,
+    trim: true,
+    required: true,
+  },
+  nationality: {
+    type: String,
+    trim: true,
+    required: true,
+  },
+  gender: {
+    type: String,
+    trim: true,
+    required: true,
+  },
+  category: {
+    type: String,
+    trim: true,
+    required: true,
+  },
 
 });
 module.exports = mongoose.model('PatientReg', patientRegSchema);
