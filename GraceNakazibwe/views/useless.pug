@@ -1,0 +1,74 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Patient Registration
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='/cssfiles/css/bootstrap.min.css')
+    link(rel='stylesheet' href='/cssfiles/index.css')
+  body
+    .container
+      form#form-id(action='/' method='POST' name='patientform')
+        .row.top-row
+          .col-lg-5.color-left
+            img(src='/imagefiles/ugandaflag.png' width='318px' height='99px' alt='ug flag')
+          .col-lg-2
+            img(src='/imagefiles/courtofarms.png' alt='court of arms' width='100px' height='99px')
+          .col-lg-5.color-right
+            img(src='/imagefiles/ugandaflag.png' width='316px' height='99px' alt='ug flag')
+        .row.mid-row
+          p Ministry of Health
+          h3 COVID-19(CORONA VIRUS)
+          p Virus-Test Registration Form
+        #form-success.form-success
+          i#icon.fa.fa-times
+        .section
+          span.Psurname Surname
+          span.Pgivename Given name
+          .form-control
+            input.surname(type='text' name='Surname')
+            input.givename(type='text' name='Givenname')
+          span#surname-error
+          span#givename-error
+        .section
+          span.P-DOB Date of Birth
+          span.P-Residence Place of Residence
+          .form-control
+            input.DOB(type='date' max='2019-12-31' name='dateofbirth')
+            input.Residence(type='text' name='residence')
+          span#DOB-error
+          span#Residence-error
+        .section
+          span.POccupation Occupation
+          span.PNationality Nationality
+          .form-control
+            input.occupation(type='text' name='occupation')
+            input.nationality(type='text' name='nationality')
+          span#Occuration-error
+          span#Nationality-error
+        .section
+          .PGender
+            span Gender
+          .form-control
+            span.malespan
+              label.form-check-label(for='male') Male
+              input#male.form-check-input(type='radio' name='gender' value='Male' checked)
+            span.femalespan
+              label.form-check-label(for='female') Female
+              input#female.form-check-input(type='radio' name='gender' value='Female')
+        .section
+          span.P-Category Category
+          br
+          select.form-action(name='category')
+            option(value='default')  --Select Category-- 
+            option(value='returnee') Returnee
+            option(value='contact') Contact
+            option(value='alert') Alert
+            option(value='volunteer') Volunteer
+          span#category-error
+        .section
+          input.btn-submit(type='submit' value='Register')
+    script(src='/javaScriptfiles/js/bootstrap.min.js')
+    script(src='/javaScriptfiles/index.js')
