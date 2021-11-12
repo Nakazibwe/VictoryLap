@@ -16,7 +16,6 @@ router.post('/', async (req, res) => {
   try {
     const patientsReg = new PatientsReg(req.body);
     await patientsReg.save((err) => {
-      // console.log(patientsReg)
       if (err) {
         throw err;
       }
