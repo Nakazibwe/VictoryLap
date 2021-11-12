@@ -29,7 +29,7 @@ const successMessage = document.getElementById('form-success');
 const successIcon = document.getElementById('icon');
 
 // Regular expressions.
-const nonumber = /^[A-Za-z]+$/;
+const nonumber = /^[A-Za-z ]+$/;
 const capitalize = /^[A-Z][a-z]/;
 
 // Validation function.
@@ -44,7 +44,7 @@ const validate = (event) => {
     surname.focus();
     isValid = false;
   } else if (!(surName.length > 1 && surName.length < 16)) {
-    surnameERROR.innerHTML = 'Surname is between 1-16 characters';
+    surnameERROR.innerHTML = 'Surname is between 1-16 letters';
     surnameERROR.style = 'color:red';
     surname.style.border = '1px solid red';
     surname.focus();
@@ -69,7 +69,7 @@ const validate = (event) => {
     givenname.focus();
     isValid = false;
   } else if (!(givenName.length > 1 && givenName.length < 16)) {
-    givennameERROR.innerHTML = 'Given name is between 1-16 characters';
+    givennameERROR.innerHTML = 'Given name is between 1-16 letters';
     givennameERROR.style = 'color:red';
     givenname.style.border = '1px solid red';
     givenname.focus();
@@ -149,8 +149,8 @@ const validate = (event) => {
     patientoccupation.style.border = '1px solid red';
     patientoccupation.focus();
     isValid = false;
-  } else if (!(patientOccupation.length > 5 && patientOccupation.length < 20)) {
-    patienceOccupationERROR.innerHTML = 'Occupation should be between 5-20 characters';
+  } else if (!(patientOccupation.length > 5 && patientOccupation.length < 50)) {
+    patienceOccupationERROR.innerHTML = 'Occupation should be between 5-50 letters';
     patienceOccupationERROR.style = 'color:red';
     patientoccupation.style.border = '1px solid red';
     patientoccupation.focus();
@@ -175,7 +175,7 @@ const validate = (event) => {
     patientnationality.focus();
     isValid = false;
   } else if (!(patientNationality.length > 5 && patientNationality.length < 20)) {
-    patientnationalityERROR.innerHTML = 'Nationality should be between 5-20 characters';
+    patientnationalityERROR.innerHTML = 'Nationality is between 5-20 letters';
     patientnationalityERROR.style = 'color:red';
     patientnationality.style.border = '1px solid red';
     patientnationality.focus();
